@@ -1,13 +1,12 @@
-# ✨ Komi - Barcode-  & QR Generator ✨
+# ✨ Komi - Barcode & QR Generator ✨
 A simple barcode and QR code generator built in **Python** with **Flask**.
 
 
-<img align= "center" width= "1024" src= "https://github.com/Ari-Qu3sadillas/FlinkShortener/blob/main/screenshots/flinkshortener-intro.gif"/>
+<img align= "center" width= "1024" src= "https://github.com/Ari-Qu3sadillas/Komi-Barcode-QR_Generator/blob/main/screenshots/komiqr-intro.gif"/>
 
 
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
 <br>
 
@@ -78,10 +77,10 @@ These are things that I will implement later (You can also take these ideas if y
 <br>
 
 ## 📷 Screenshots
-<img style="float: right;" width= "480" src= "https://github.com/Ari-Qu3sadillas/FlinkShortener/blob/main/screenshots/flinkshortener-home.png"/>
+<img style="float: right;" width= "480" src= "https://github.com/Ari-Qu3sadillas/Komi-Barcode-QR_Generator/blob/main/screenshots/komiqr-home.png"/>
 
 
-<img width= "480" src= "https://github.com/Ari-Qu3sadillas/FlinkShortener/blob/main/screenshots/flinkshortener-404.png"/>
+<img width= "480" src= "https://github.com/Ari-Qu3sadillas/Komi-Barcode-QR_Generator/blob/main/screenshots/komiqr-404.png"/>
 
 
-<img width= "480" src= "https://github.com/Ari-Qu3sadillas/FlinkShortener/blob/main/screenshots/flinkshortener-500.png"/>
+<img width= "480" src= "https://github.com/Ari-Qu3sadillas/Komi-Barcode-QR_Generator/blob/main/screenshots/komiqr-500.png"/>
