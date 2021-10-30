@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }} Internal Error
+{% endblock title %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}">
+{% endblock styles %}
+
+{% block container %}
+    <div class="container">
+        <div class="row" id="content">
+            <div class="col-md-7 col-sm-12">
+                <img src="{{ url_for('static', filename='error/500.png') }}" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-5 col-sm-12" id="message">
+                <h1>500 - Internal server error</h1>
+                <p>
+                    Something went wrong in our server, please<br>
+                    <a href="{{ url_for('index') }}">Click here</a> to go back
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock container %}

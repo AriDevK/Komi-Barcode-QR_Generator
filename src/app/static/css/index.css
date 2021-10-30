@@ -1,0 +1,51 @@
+form{
+    padding-top: 20px;
+}
+
+#github{
+    max-width: 30px;
+    max-height: 30px;
+    display: block;
+    margin-left: auto;
+    filter: invert(56%) sepia(13%) saturate(1059%) hue-rotate(193deg) brightness(87%) contrast(93%);
+}
+
+#github:hover{
+    cursor: pointer;
+    filter: invert(33%) sepia(19%) saturate(803%) hue-rotate(191deg) brightness(97%) contrast(88%);
+}
+
+#title{
+    font-family: "anime";
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+    margin-top: -10px;
+}
+
+#icon{
+    max-width: 250px !important;
+    max-height: 250px !important;
+    align-self: center;
+
+}
+
+.main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.btn-primary{
+    background-color: #747EB0 !important;
+    border-color: #424864 !important;
+}
+
+.btn-primary:hover{
+    background-color: #525A7D !important;
+}

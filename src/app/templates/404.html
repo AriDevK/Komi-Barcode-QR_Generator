@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }} Not Found
+{% endblock title %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}">
+{% endblock styles %}
+
+{% block container %}
+    <div class="container">
+        <div class="row" id="content">
+            <div class="col-md-5 col-sm-12" id="message">
+                <h1>404 - Not Found</h1>
+                <p>
+                    This link is unavailable or do not exist. <br>
+                    <a href="{{ url_for('index') }}">Click here</a> to go back
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="{{ url_for('static', filename='error/404.png') }}" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+{% endblock container %}

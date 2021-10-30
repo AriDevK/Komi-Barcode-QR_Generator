@@ -1,0 +1,25 @@
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15%;
+}
+
+#message{
+    color: white;
+    text-align: right;
+}
+
+#message h1{
+    font-weight: bold;
+}
+
+a{
+    color: rgb(176, 153, 229);
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }}Home
+{% endblock title %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock styles %}
+
+{% block container %}
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="main col card m-4">
+                <a href="https://github.com/Ari-Qu3sadillas/Komi-Barcode-QR_Generator" target="_blank">
+                    <img src="{{ url_for('static', filename='icons/github.svg') }}" id="github">
+                </a>
+                <img src="{{ url_for('static', filename='favicon.ico') }}" class="img-fluid" id="icon">
+                <h1 id="title">Komi <br> Barcode Generator</h1>
+                <small id="description">Create your own barcodes in few clicks</small>
+
+                <form method="get">
+                    <div class="mb-3">
+                        <label for="data" class="form-label">Select a type...</label>
+                        <select class="form-select" aria-label="Default select example" name="barcode-type" required>
+                            <option hidden disabled selected value>Select an option...</option>
+                                {% for bc in provided_barcodes %}
+                                    {% if bc == barcode_type %}
+                                        <option value="{{ bc }}" selected>{{ bc }}</option>
+                                    {% else %}
+                                        <option value="{{ bc }}">{{ bc }}</option>
+                                    {% endif %}
+                                {% endfor %}
+                            <option value="qr">QR</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="data" class="form-label">Data</label>
+                        <input name="data" type="text" class="form-control" id="data" placeholder="Insert the code data" required>
+                        {% if error_message %}
+                            <small style="color:red">{{ error_message }}</small>
+                        {% endif %}
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Create</button>
+                        {% if barcode %}
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            See your barcode
+                        </button>
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {% if barcode %}
+        <div class="modal fade show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Your Barcode has been created 😊</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid mx-auto d-block" id="barcode" src="{{ url_for('static', filename='images/' + barcode + '.png') }}" alt="This image is not available, maybe your browser is not compatible or this image has been deleted." />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="btn-copy-barcode">Copy to clipboard</button>
+                        <a type="button" class="btn btn-primary" href="{{ url_for('static', filename='images/' + barcode + '.png') }}" download="{{ barcode }}">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock container %}
+
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/index.js') }}" type="text/javascript"></script>
+{% endblock scripts %}

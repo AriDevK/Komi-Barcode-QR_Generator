@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Komi - {% endblock title %}</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  {% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap.min.css') }}">
+  {% endblock styles %}
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  {% block container %}
+  {% endblock container %}
+
+  {% block scripts %}
+    <script src="{{ url_for('static', filename='js/particles.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
+  {% endblock scripts %}
+</body>
+
+</html>
