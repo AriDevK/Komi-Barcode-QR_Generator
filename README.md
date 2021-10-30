@@ -1,1 +1,1 @@
-# Komi--Barcode-QR-Generator
+# Komi - Barcode & QR Generator
