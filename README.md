@@ -1,2 +1,87 @@
-# Komi-Barcode-QR_Generator
-A simple barcode and QR code generator built in Python with Flask.
+# ✨ Komi - Barcode-  & QR Generator ✨
+A simple barcode and QR code generator built in **Python** with **Flask**.
+
+
+<img align= "center" width= "1024" src= "https://github.com/Ari-Qu3sadillas/FlinkShortener/blob/main/screenshots/flinkshortener-intro.gif"/>
+
+
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+
+<br>
+
+## 📑 Table of Contents 
+  - [Usage](#-usage)
+  - [Installation](#-installation)
+  - [Contribute](#-contribute)
+  - [Things to do - Contribute ideas](#-things-to-do---contribute-ideas)
+  - [Screenshots](#-screenshots)
+
+<br>
+
+
+## 🤖 Usage
+You can access to it on https://komiqr.herokuapp.com
+
+<br>
+
+## ⚙ Installation
+1. Clone the repo and go to the directory.
+```shell
+$ git clone https://github.com/Ari-Qu3sadillas/Komi-Barcode-QR_Generator.git
+$ cd FlinkShortener
+```
+2. Initialize and activate a virtualenv.
+```shell
+$ virtualenv venv
+$ source venv/bin/activate
+```
+
+3. Install the dependencies:
+```shell
+$ pip install -r ./requirements.txt
+```
+4. Move to the src directory and execute the run.py file.
+```shell
+$ cd src
+$ python ./run.py
+```
+In order to change betweem the Development & Production environment you may go to the __init__.py file and change it manually. (Sorry this will be updated soon)
+
+<br>
+
+## 🗳 Contribute
+
+You can contribute to the development or improvement of this app and it will be much appreciated if you do 🥰
+
+### Step 1
+
+- Fork or Clone this repo
+
+### Step 2
+
+- Magic Magic Magic ✨✨✨
+
+### Step 3
+
+- Create a new pull request
+
+<br>
+
+
+## 💭 Things to do - Contribute ideas
+
+These are things that I will implement later (You can also take these ideas if you want to contribute 😊)
+- Use the flask CLI and let the app run as development or production environment.
+
+<br>
+
+## 📷 Screenshots
+<img style="float: right;" width= "480" src= "https://github.com/Ari-Qu3sadillas/FlinkShortener/blob/main/screenshots/flinkshortener-home.png"/>
+
+
+<img width= "480" src= "https://github.com/Ari-Qu3sadillas/FlinkShortener/blob/main/screenshots/flinkshortener-404.png"/>
+
+
+<img width= "480" src= "https://github.com/Ari-Qu3sadillas/FlinkShortener/blob/main/screenshots/flinkshortener-500.png"/>
